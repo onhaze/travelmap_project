@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 지역명 -->
+        <TextView
+            android:id="@+id/region_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역명"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 날짜 선택 -->
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="날짜 선택"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#88CCED"
+            android:paddingVertical="10dp" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 별점 입력 -->
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/review_rating"
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="false"
+            android:layout_marginTop="4dp"
+            android:progressTint="@color/medium_blue"
+            android:progressBackgroundTint="@android:color/darker_gray" />
+
+        <!-- 사진 선택 -->
+        <Button
+            android:id="@+id/photo_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사진 선택"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#88CCED"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="12dp" />
+
+        <!-- 한줄평 입력 -->
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="한줄평 입력"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:backgroundTint="#88CCED"
+            android:padding="12dp"
+            android:layout_marginTop="24dp" />
+
+        <!-- 저장 버튼 -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#88CCED"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp" />
+    </LinearLayout>
+</ScrollView>

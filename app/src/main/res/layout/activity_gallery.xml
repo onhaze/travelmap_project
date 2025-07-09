@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="false"
+        android:paddingTop="?attr/actionBarSize"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:id="@+id/empty_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="등록된 리뷰가 없습니다."
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+</FrameLayout>
